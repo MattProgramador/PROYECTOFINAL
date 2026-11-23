@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contacto | Aprende Más Con Menos</title>
+    <meta name="description" content="Comunícate con nuestra academia para conocer nuestros cursos.">
+    <meta name="keywords" content="contacto, academia, cursos, consultas">
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <!-- Encabezado y navegación -->
+    <header>
+        <h1>🎓 Aprende Más Con Menos</h1>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="cursos.html">Cursos</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+
+        <section>
+            <h2>Contáctanos</h2>
+            <p>¿Tienes alguna consulta? Escríbenos.</p>
+
+            <!-- Imagen y formulario -->
+            <div class="contacto">
+
+                <img src="img/contacto.png"
+                     alt="Atención a estudiantes">
+
+                <!-- Formulario de contacto -->
+                <form id="formulario">
+
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre"
+                           placeholder="Escribe tu nombre">
+
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="text" id="correo"
+                           placeholder="ejemplo@gmail.com">
+
+                    <label for="telefono">Teléfono:</label>
+                    <input type="text" id="telefono"
+                           placeholder="987654321">
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje"
+                              placeholder="Escribe tu consulta"></textarea>
+
+                    <button type="submit">Enviar mensaje</button>
+
+                </form>
+
+            </div>
+
+            <!-- Información sobre la inscripción -->
+            <div class="ayuda">
+
+                <h2>¿Cómo puedo inscribirme?</h2>
+
+                <button type="button" id="mostrarAyuda">
+                    Ver información
+                </button>
+
+                <p id="informacion" style="display: none;">
+                    Para inscribirte, completa nuestro formulario
+                    de contacto y envíanos tu consulta.
+                    Nos comunicaremos contigo.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2026 Aprende Más Con Menos</p>
+    </footer>
+
+    <!-- Librería jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Efectos jQuery -->
+    <script src="js/efectos.js"></script>
+
+    <!-- Validación JavaScript -->
+    <script src="js/validacion.js"></script>
+
+</body>
+</html>

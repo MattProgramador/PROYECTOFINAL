@@ -1,0 +1,293 @@
+
+/* ESTILOS GENERALES */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f7ff;
+    color: #0b1f3a;
+    margin: 0;
+}
+
+/* ENCABEZADO */
+header {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #1677ff;
+    margin: 0;
+}
+
+/* MENÚ DE NAVEGACIÓN */
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #0b1f3a;
+    text-decoration: none;
+}
+
+/* SECCIONES */
+section {
+    padding: 30px;
+    text-align: center;
+}
+
+/* PÁGINA INICIO */
+.inicio {
+    background-color: #dceeff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+}
+
+.inicio img {
+    width: 35%;
+}
+
+/* TARJETAS */
+.contenedor {
+    display: flex;
+    gap: 20px;
+}
+
+article {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    border-radius: 10px;
+}
+
+/* IMÁGENES DE LOS BENEFICIOS */
+article img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* BOTONES */
+.boton {
+    display: inline-block;
+    background-color: #1677ff;
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+/* INVITACIÓN */
+.invitacion {
+    background-color: #1677ff;
+    color: white;
+}
+
+.invitacion .boton {
+    background-color: white;
+    color: #1677ff;
+}
+
+/* PÁGINA NOSOTROS */
+.nosotros {
+    background-color: #dceeff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.nosotros div {
+    width: 40%;
+}
+
+.nosotros img {
+    width: 300px;
+}
+
+/* PÁGINA CONTACTO */
+.contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.contacto img {
+    width: 250px;
+}
+
+/* FORMULARIO */
+form {
+    background-color: white;
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contacto form {
+    margin: 0;
+}
+
+label, input, textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+}
+
+/* BOTÓN DEL FORMULARIO */
+button {
+    background-color: #1677ff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* SECCIÓN DE AYUDA */
+.ayuda {
+    background-color: white;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    background-color: #0b1f3a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* DISEÑO RESPONSIVO PARA TABLETS */
+@media (max-width: 768px) {
+
+    /* Encabezado */
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Inicio */
+    .inicio {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .inicio img {
+        width: 70%;
+    }
+
+    /* Tarjetas */
+    .contenedor {
+        flex-direction: column;
+    }
+
+    /* Nosotros */
+    .nosotros {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nosotros div {
+        width: 100%;
+    }
+
+    /* Contacto */
+    .contacto {
+        flex-direction: column;
+    }
+
+    .contacto img {
+        width: 70%;
+    }
+
+    .contacto form {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* DISEÑO RESPONSIVO PARA CELULARES */
+@media (max-width: 480px) {
+
+    nav a {
+        margin: 8px;
+    }
+
+    .inicio img,
+    .nosotros img,
+    .contacto img {
+        width: 100%;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
+
+/* ANIMACIÓN DE APARICIÓN */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* ANIMACIÓN DE IMÁGENES */
+.inicio img,
+.nosotros img,
+.contacto img {
+    animation: aparecer 1.5s;
+}
+
+/* EFECTO EN TARJETAS */
+article {
+    transition: transform 0.3s;
+}
+
+article:hover {
+    transform: translateY(-5px);
+}
+
+/* IMÁGENES DE LAS TARJETAS */
+article img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* EFECTO EN BOTONES */
+.boton:hover,
+button:hover {
+    background-color: #0b1f3a;
+}
